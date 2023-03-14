@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.homemenu{
+    display: inline-block;
+}
+
+
+.menu{
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    display: flex;
+}
+
+.start_menu{
+    width: 20%;
+    text-align: center;
+}
+
+.midd_menu{
+    width: 60%;
+    text-align: center;
+}
+
+.end_menu{
+    width: 20%;
+    text-align: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+    padding: 0px 10px;
+    font-size: 16px;
+}
+
+.mainlogo{
+    list-style: none;
+    display: none;
+    
+}
+
+@media screen and (max-width:990px) {
+    .homemenu{
+        display: none;
+
+    }
+
+    .logo{
+        
+        display: none;
+    }
+
+    .mainlogo{
+        display: block;
+    }
+
+}
+
+.product{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product_img{
+    display: flex;
+}
+
+.product_imgessss{
+    padding: 0px 10px 0px 0px; 
+}
+
+
+.product_detail{
+    padding: 0px 0px 0px 50px; 
+}
+
+.addtocart_line{
+    align-items: center;
+}
+
+.addtomain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addtocartrow{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.inciment_decriment{
+    width: 40%;
+    border: 1px solid gray;
+    padding: 14px 0px;
+    text-align: center;
+    
+}
+
+.addtocart{
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    
+}
+
+.addtocart a{
+    background-color: rgb(57, 57, 57);
+    padding: 20px 45px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.buttons{
+    color: black;
+    text-decoration: none;
+    padding: 0px 10px;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+}
+
+.count{
+    font-size: 20px;
+}
+
+.adddd{
+    width: 100%;
+}
+
+
+.tabs{
+    font-size: 20px;
+}
+
+.tabs p{
+    font-size: 18px;
+}
+
+.qicklink{
+    padding: 60px 0px;
+}
+
+.qicklink a{
+    text-decoration: none;
+    color: black;
+    /* padding: 15px 0px; */
+    font-size: 17px;
+}
+
+
+form .inpu{
+    width: 86.5%;
+    padding: 12px 0px;
+}
+
+form button{
+    padding: 12px;
+    border: none;
+    background-color: rgb(38, 38, 38);
+    color: white;
+}
+
+textarea{
+    max-width: 100%;
+}

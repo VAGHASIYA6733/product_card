@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <div class="menu">
+            <div class="start_menu">
+                <div class="homemenu">
+                    <a href="#">Home</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Contact</a>
+                </div>
+                
+                <li class="mainlogo"><a href="#">LOGO</a></li>
+            </div>
+
+
+            <div class="midd_menu">
+                <div class="logo">
+                    <a href="./website.html">LOGO</a>
+                </div>
+            </div>
+
+            <div class="end_menu">
+                <div>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass" style="font-size: 25px; color: gray;"></i></a>
+                    <a href="#"><i class="fa-regular fa-user" style="font-size: 25px; color: gray;"></i></a>
+                    <a href="../modeal/index.html">
+                        <i class="fa-solid fa-cart-shopping" style="font-size: 25px; position: relative; color: gray;">
+                            <span id="show"
+                                style="font-size: 10px; padding: 5px 8px; color: white; font-weight: 300; background-color: orange; border-radius: 50px; position: absolute; top: -10px; left: 20px;">1</span>
+                        </i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+    <!-- ---------------------------------------------------------------product----------------------------------------------------------------- -->
+  
+  
+    <div class="product">
+        <div class="product_img">
+            <div class="product_imgessss">
+
+                <div class="row d-flex justify-content-around">
+
+                    <div class="">
+
+                        <a href="#">
+                            <img src="./image/prod1.png" alt="" width="100" class="img-fluid">
+                        </a>
+
+                    </div>
+
+                    <div class="">
+
+                        <a href="#">
+                            <img src="./image/prod2.png" alt="" width="100" class="img-fluid">
+                        </a>
+
+                    </div>
+                    <div class="">
+
+                        <a href="#">
+                            <img src="./image/prod3.png" alt="" width="100" class="img-fluid">
+                        </a>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+            <div class="">
+                <img src="./image/prod1.png" alt="" width="500" class="img-fluid">
+            </div>
+
+
+            <div class="product_detail">
+                <div>
+                    <h1 style="text-align: left;">Charming Linen Saree With Ikkat <br> Self Weaving Concept</h1>
+                    <br><br>
+                    <span style="font-size: 20px; color: gray;"> ₹2,999.00</span><span
+                        style="font-size: 30px;">₹1,999.00</span>
+
+                    <br><br>
+
+                    <p style="font-size: 23px; color: gray;">This saree comes with a similar color blouse made with <br>
+                        brocade.</p>
+
+                    <p style="font-size: 23px; color: gray;">This attractive georgette saree is 5.50 meters long and
+                        comes <br> with fully unstitched blouse
+                        material.</p>
+
+                    <p style="font-size: 23px; color: gray;">Saree has been around for centuries but now comes in
+                        various <br> styles to suit your every mood. Be
+                        amazed by sporting this <br> amazing saree at weddings, functions like sangeet, <br>
+                        engagements, or any
+                        celebrations.</p>
+
+                    <!-- ---------------------------------------------------------------------------------addtocart------------------------------------------------------------------------->
+<br><br><br>
+                    <div class="addtocart_line">
+                        <div class="addtomain">
+
+                            <div class="addtocartrow">
+
+                            <div class="inciment_decriment">
+
+                                
+                                <button class="buttons" onclick="minus()" style="background-color: none;">-</button>
+
+                                <span id="count" class="count">1</span>
+
+                                <button class="buttons" onclick="plus()" style="background-color: none;">+</button>
+                    
+
+                            </div>
+
+                            
+                            <div class="addtocart">
+                                <a href="#" onclick="addtocart()" id="btn">ADD TO CART</a>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+    <!-- -------------------------------------------------------------------------------tabs------------------------------------------------------------------ -->
+
+   
+
+
+    <script>
+
+        var data = 1;
+
+        const minus = () => {
+
+            if (data > 1) {
+                data -= 1;
+                document.querySelector("#count").innerHTML = data;
+            } else {
+                document.querySelector("#count").innerHTML = data;
+
+            }
+
+
+
+            document.querySelector("#count").innerHTML = data;
+        }
+
+        const plus = () => {
+            data += 1;
+
+            document.querySelector("#count").innerHTML = data;
+        }
+
+
+        const addtocart = () => {
+
+            dataa   = count;
+
+            document.querySelector('#show').innerText = data;
+ 
+
+
+
+
+
+
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

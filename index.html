@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+.card1{
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 25px;
+	opacity: 0;
+  
+}
+
+.icon i{
+    border-radius: 50%;
+	padding: 10px;
+	background-color: white;
+}
+
+.icon i:hover{
+    background-color: black;
+    color: white;
+}
+img{
+    height: 250px;
+ 
+}
+.body {
+    
+    width: 25%;
+    height: 550px;
+    border-collapse: collapse;
+    margin: auto;
+
+}
+.container{
+    margin-top: 20px;
+}
+img{
+    height: 250px;
+ 
+}
+
+.card{
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 25px;
+	opacity: 0;
+  
+}
+
+.icon i{
+    border-radius: 50%;
+	padding: 10px;
+	background-color: white;
+}
+
+.icon i:hover{
+    background-color: black;
+    color: white;
+}
+
+.img {
+    width: 100%;
+  
+}
+
+.card:hover .icon{
+    opacity: 1;
+   
+}
+
+.div1 {
+    /* width: 100%;
+    height: 50px; */
+    border: 1px solid black;
+    background-color: rgb(234, 230, 230);
+    text-align: center;
+    padding: 10px 20px;
+    /* margin: 10px 10px ; */
+}
+
+.card1{
+    /* width: 100%;
+    height: 100px; */
+    border: 1px solid black;
+    margin-top: 10px;
+    background-color: rgb(234, 230, 230);
+    text-align: center;
+    padding: 10px 20px;
+    /* margin: 10px 10px ; */
+}
+
+.div0 {
+    display: flex;
+    /* margin-left: 5px; */
+}
+
+.div3 {
+   
+    /*padding: 10px;*/
+    width: 50%;
+    border: 1px solid black;
+    background-color: rgb(234, 230, 230);
+    /* margin: 5px; */
+    text-align: center;
+   /* padding: 10px 50px;*/
+    /* margin: 10px ; */
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.div4 {
+    /* width: 50%;
+    height: 50px; */
+    /* padding: 10px; */
+    border: 1px solid black;
+    background-color: rgb(234, 230, 230);
+    /* margin: 5px; */
+    text-align: center;
+    /* padding: 10px 50px; */
+    /* margin: 10px ; */
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    
+}
+
+.div5 {
+    /* width: 100%;
+    height: 55px; */
+    border: 1px solid black;
+    margin-top: 10px;
+    background-color: rgb(234, 230, 230);
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 10px ;
+    display: flex;
+}
+.col{
+    display: flex;
+}
+
+.Add {
+   
+    /* height: 35px;  */
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 10px ;
+
+}
+
+.Add:hover {
+    background-color: blueviolet;
+    border: none;
+    transition: 0.3s;
+}
+
+
+/* .i{
+    margin-left: 130px;
+    font-size: 30px;
+    margin-top: 10px;
+} */
+
+/* table */
+
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px 10px;
+}
+table{
+    border: 1px solid black;
+    width: 100%;
+    height: 25%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <div class="form-field">
+            <input type="text" placeholder="Product title" id="title" required>
+        </div>
+        <br>
+
+        <div class="form-field">
+            <input type="text" placeholder="Product Description" id="des" required />
+        </div>
+
+        <br>
+        <div class="form-field">
+            <input type="number" placeholder="MRP" id="mrp" required class="in1">
+
+        </div>
+
+        <br>
+        <div class="form-field">
+            <input type="number" placeholder="Price " id="price" required class="in1">
+        </div>
+        <br>
+        <div class="form-field">
+            <input type="number" placeholder="stock" id="stock" required class="in1">
+            <button id="sku"></button>
+        </div>
+        <br>
+        <div class="form-field">
+            <button class="btn" type="submit" onclick="data(event)">Submit</button>
+            <button onclick="sub1(event)">form</button> 
+        </div>
+
+    </form>
+
+    <br>
+    <br>
+    <div class="body">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Black_Converse_sneakers.JPG" class="img"
+                alt="">
+            <div class="icon mt-3 p-2">
+                <p><i class="bi bi-heart" onclick="onClick()" ondblclick="onDblClick()"></i></p>
+                <p><i class="bi bi-star" onclick="rating()"  id="clickme"></i></p>
+                <p><i class="bi bi-info-circle"></i></p>
+            </div>
+            <div class="container">
+                <div class="div1 placeholder col-12" id="card-producttitle"></div>
+                <div class="card1 placeholder  col-12" id="productdes" ></div>
+
+                <div class="div0">
+                    <div class="div3 placeholder  col-6 " id="mrp1"></div>
+                    <div class="div4 placeholder col-6" id="price1"></div>
+                </div>
+
+
+                <div class="col">
+                   <a href="./card product ad/index.html"><button class="Add">Add <i class="fa-solid fa-plus i"></i></button></a> 
+                   <a href="modeal/index.html"><button class="Add">Buy Now </button></a> 
+                </div>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>Like</th>
+                <th>Rating</th>
+
+            </tr>
+            <tr>
+                <td>
+                    <button id="like1"></button>
+                </td>
+                <td id="rating"></td>
+
+            </tr>
+
+        </table>
+        <script src="./js/index.js"></script>
+</body>
+
+</html>

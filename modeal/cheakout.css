@@ -1,0 +1,119 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+
+
+.contener{
+    margin:0px auto 0px auto;
+}
+
+.code{
+
+    background-color: #f5f5f5;
+    padding: 20px 0px 20px 10px;
+    border-radius: 5px;
+}
+.code a{
+   
+   color:#716f6f ;
+}
+
+.row{
+display: flex;
+margin-top: 30px;
+}
+
+.fname{
+    display: flex;
+}
+label{
+    font-size: 20px;
+   
+}
+input{
+    display: block;
+    border-radius: 5px ;
+    padding: 15px 10px;
+    border: 0.5px solid black;
+   
+}
+textarea{
+    display: block;
+    border-radius: 5px ;
+    padding: 15px 10px;
+   
+}
+
+select{
+    display: block;
+    border-radius: 5px ;
+    padding: 15px 10px;
+   
+}
+.hh{
+    margin-right: 20px;
+    
+  
+}
+.iinpput{
+
+width: 350px;
+
+}
+.iinpput2{
+
+    width: 720px;
+}
+.ttarea{
+
+    width: 690px;
+
+}
+.marto{
+
+    margin-top: 20px;
+}
+.marto2{
+
+    margin-top: 15px;
+}
+.FM2{
+    width: 460PX;
+}
+.button{
+
+    background-color: black;
+    border: none;
+padding: 25px;
+    color: white;
+}
+
+.button:hover{
+
+    background-color: rgb(104, 102, 102);
+    border: none;
+
+}
+
+
+
+/* js form */
+
+.jsopenform{
+display: none;
+}
+
+/* js form */
+
+
+/* modal */
+
+.modal_button{
+   margin-left: 47%;
+   padding: 20px 40px;
+   background-color: black;
+   color: white;
+   border-radius: 5PX;
+}
